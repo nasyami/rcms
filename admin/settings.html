@@ -188,8 +188,29 @@ function toggleAdminMenu() {
                                 </div>
                             </div>
                         </div>
+                        <hr class="border-slate-100">
+
+                        <!-- Social Media Links -->
+                        <div>
+                            <h4 class="font-semibold text-slate-800 text-sm mb-3">Pautan Media Sosial</h4>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 mb-1.5">Facebook URL</label>
+                                    <input type="url" name="social_facebook" value="https://facebook.com/username" placeholder="https://facebook.com/..." class="w-full text-sm border border-slate-200 rounded-lg px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-navy/30 focus:border-navy transition">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 mb-1.5">Instagram URL</label>
+                                    <input type="url" name="social_instagram" value="https://instagram.com/username" placeholder="https://instagram.com/..." class="w-full text-sm border border-slate-200 rounded-lg px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-navy/30 focus:border-navy transition">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 mb-1.5">TikTok URL</label>
+                                    <input type="url" name="social_tiktok" value="https://tiktok.com/@username" placeholder="https://tiktok.com/..." class="w-full text-sm border border-slate-200 rounded-lg px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-navy/30 focus:border-navy transition">
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="mt-auto pt-4">
-                            <button type="submit" class="bg-navy hover:bg-navy-dark text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition w-fit">Simpan Biodata</button>
+                            <button type="submit" onclick="demoAlert()" class="bg-navy hover:bg-navy-dark text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition w-fit">Simpan Biodata</button>
                         </div>
                     </form>
                 </div>
