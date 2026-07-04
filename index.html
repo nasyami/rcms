@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahmah Consultancy Services — Solusi Kewangan, Masa Depan Terjamin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/app-WshJ1xP1.css">
+</head>
+<body class="font-sans antialiased text-slate-900 bg-slate-50 flex flex-col min-h-screen">
+
+<!-- Header -->
+<header class="fixed top-0 w-full bg-white border-b border-slate-200 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <a href="index.html" class="flex-shrink-0">
+                <img src="images/logo4.png" alt="Rahmah Consultancy Services" class="h-30 w-auto">
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#services" class="text-navy hover:text-gold font-medium text-sm transition">Servis</a>
+                <a href="#stats"    class="text-navy hover:text-gold font-medium text-sm transition">Statistik</a>
+                <a href="#faqs"     class="text-navy hover:text-gold font-medium text-sm transition">Soalan Lazim</a>
+                <a href="#contact"  class="bg-navy hover:bg-navy-dark text-white font-semibold px-5 py-2 rounded-lg text-sm transition">Semak Kelayakan</a>
+            </nav>
+            <button id="mobile-menu-btn" class="md:hidden text-navy p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-gold">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 pt-3 pb-4 space-y-3">
+        <a href="#services" class="block text-navy font-medium py-1 text-sm">Servis</a>
+        <a href="#stats"    class="block text-navy font-medium py-1 text-sm">Statistik</a>
+        <a href="#faqs"     class="block text-navy font-medium py-1 text-sm">Soalan Lazim</a>
+        <a href="#contact"  class="block bg-navy text-white font-semibold px-4 py-2 rounded-lg text-sm text-center">Semak Kelayakan</a>
+    </div>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</header>
+
+<main class="flex-grow pt-16">
+
+    <!-- 1. HERO -->
+    <section class="relative overflow-hidden min-h-[88vh] flex items-center py-28 px-4 sm:px-6 lg:px-8">
+        <div class="hero-bg absolute inset-0"
+             style="background-image: url('images/Gemini_Generated_Image_19mvqt19mvqt19mv.png'); background-size: cover; background-position: center;"></div>
+        <div class="absolute inset-0"
+             style="background: linear-gradient(to right, rgba(15,26,69,0.95) 0%, rgba(15,26,69,0.85) 100%);"></div>
+        <div class="absolute top-0 left-0 right-0 h-1 z-10"
+             style="background: linear-gradient(90deg, #A8882E, #FFE87C, #C9A840, #FFE87C, #A8882E);"></div>
+
+        <div class="relative z-20 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="text-center lg:text-left">
+                <p class="font-semibold text-xs tracking-widest uppercase mb-5" style="color:#C9A840;">Solusi Kewangan Terpercaya</p>
+                <h1 class="hero-headline text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                    Semak Kelayakan Anda<br>
+                    <span class="gold-metallic-text">Bersama Kami</span>
+                </h1>
+                <p class="text-slate-100 text-lg mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                    Rahmah Consultancy Services menyediakan penyelesaian kewangan yang inovatif. Sertai lebih 10,000 pelanggan yang telah mempercayai kami.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+                    <a href="#contact" class="btn-gold-metallic font-bold px-8 py-4 text-sm tracking-wide shadow-xl">Semak Kelayakan Sekarang</a>
+                    <a href="#services" class="inline-block border border-white/30 hover:border-white/60 text-white font-semibold px-8 py-4 rounded-xl transition text-sm">Ketahui Lebih Lanjut</a>
+                </div>
+                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 mb-10">
+                    <a href="#services" class="service-chip">Perancangan Kewangan</a>
+                    <a href="#services" class="service-chip">Semakan Pinjaman</a>
+                    <a href="#services" class="service-chip">Restrukturisasi Hutang</a>
+                </div>
+                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-6 text-slate-400 text-xs">
+                    <div class="flex items-center gap-2">
+                        <svg class="w-4 h-4" style="color:#C9A840" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                        <span>Selamat & Terjamin</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-4 h-4" style="color:#C9A840" fill="currentColor" viewBox="0 0 20 20"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/></svg>
+                        <span>10,000+ Pelanggan</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full max-w-lg mx-auto lg:max-w-none relative">
+                <div class="absolute -inset-1 bg-gradient-to-r from-[#A8882E] to-[#FFE87C] rounded-2xl blur opacity-30"></div>
+                <div class="relative bg-slate-900 rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+                    <video class="w-full h-auto aspect-video object-cover" autoplay loop muted playsinline controls>
+                        <source src="videos/TestVid.mp4" type="video/mp4">
+                        Maaf, pelayar web anda tidak menyokong format video ini.
+                    </video>
+                    <div class="absolute top-4 right-4 bg-black/70 backdrop-blur-sm text-white text-xs px-3 py-1.5 rounded-full border border-white/20 pointer-events-none flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+                        Klik untuk audio
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OWNER PROFILE -->
+    <section id="profil" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="reveal flex-shrink-0 flex justify-center">
+                    <div class="rounded-full p-[3px]" style="background: linear-gradient(135deg, #A8882E, #FFE87C, #C9A840, #FFE87C, #A8882E);">
+                        <div class="rounded-full p-1 bg-white">
+                            <img src="images/a5e960547f3d1fb5b0f887a23b10d43a~tplv-tiktokx-cropcenter_1080_1080.jpeg"
+                                 alt="Pengasas Rahmah Consultancy"
+                                 class="w-44 h-44 sm:w-52 sm:h-52 rounded-full object-cover object-top block">
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal text-center md:text-left">
+                    <p class="text-gold font-semibold text-xs tracking-widest uppercase mb-2">Pengarah Urusan</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-navy mb-1">Khairul Amri Chamili</h2>
+                    <p class="text-slate-400 text-sm mb-5">Rahmah Consultancy Services</p>
+                    <div class="w-12 h-0.5 mb-5 mx-auto md:mx-0" style="background: linear-gradient(90deg, #A8882E, #FFE87C, #A8882E);"></div>
+                    <p class="text-slate-600 leading-relaxed mb-8 text-sm max-w-lg">
+                        Dengan lebih 8 tahun pengalaman dalam industri kewangan Malaysia, beliau telah membantu ribuan pelanggan mencapai kebebasan kewangan melalui penyelesaian yang inovatif dan terancang. Pakar dalam perancangan kewangan, semakan pinjaman, dan penyatuan hutang dikenali kerana pendekatan yang telus dan berorientasikan hasil.
+                    </p>
+                    <div class="grid grid-cols-3 gap-4 max-w-sm mx-auto md:mx-0">
+                        <div class="reveal bg-slate-50 rounded-xl p-4 text-center border border-slate-100">
+                            <p class="text-xl font-extrabold gold-metallic-text count-up" data-target="8" data-suffix="+">8+</p>
+                            <p class="text-xs text-slate-500 mt-1 leading-tight">Tahun Pengalaman</p>
+                        </div>
+                        <div class="reveal bg-slate-50 rounded-xl p-4 text-center border border-slate-100">
+                            <p class="text-xl font-extrabold gold-metallic-text count-up" data-target="10" data-suffix="k+">10k+</p>
+                            <p class="text-xs text-slate-500 mt-1 leading-tight">Pelanggan Dibantu</p>
+                        </div>
+                        <div class="reveal bg-slate-50 rounded-xl p-4 text-center border border-slate-100">
+                            <p class="text-xl font-extrabold gold-metallic-text count-up" data-target="91" data-suffix="%">91%</p>
+                            <p class="text-xs text-slate-500 mt-1 leading-tight">Kadar Kelulusan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. SERVICES -->
+    <section id="services" class="py-20 px-4 bg-dot-grid">
+        <div class="max-w-7xl mx-auto">
+            <div class="reveal text-center mb-14">
+                <p class="text-gold font-semibold text-xs tracking-widest uppercase mb-3">Apa Yang Kami Tawarkan</p>
+                <h2 class="text-3xl sm:text-4xl font-bold text-navy">Servis Kami</h2>
+                <div class="mt-4 w-16 h-1 mx-auto rounded-full" style="background: linear-gradient(90deg, #A8882E, #FFE87C, #A8882E);"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="reveal group p-8 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg hover:border-gold transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-all duration-300 bg-gold-light text-gold group-hover:bg-gold group-hover:text-white">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Perancangan Kewangan</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Kami membantu anda merancang kewangan peribadi dengan strategi yang tersusun untuk mencapai kebebasan kewangan.</p>
+                </div>
+                <div class="reveal group p-8 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg hover:border-gold transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-all duration-300 bg-gold-light text-gold group-hover:bg-gold group-hover:text-white">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Semakan Kelayakan Pinjaman</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Semak kelayakan pinjaman anda dengan cepat dan mudah. Kami akan pandukan anda sepanjang proses permohonan.</p>
+                </div>
+                <div class="reveal group p-8 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg hover:border-gold transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-all duration-300 bg-gold-light text-gold group-hover:bg-gold group-hover:text-white">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 7l2.55 2.4A1 1 0 0116 11H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clip-rule="evenodd"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Pengurusan & Penyatuan Hutang</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Penyelesaian komprehensif untuk membantu anda menguruskan dan merestrukturkan hutang dengan lebih efektif.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. STATS -->
+    <section id="stats" class="py-20 px-4 bg-navy">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center md:divide-x md:divide-slate-700">
+                <div class="reveal flex flex-col items-center px-4">
+                    <span class="text-4xl sm:text-5xl font-extrabold gold-metallic-text mb-2 count-up" data-target="10000" data-suffix="+">10,000+</span>
+                    <span class="text-slate-300 text-sm font-medium">Individu & Prospek Dibantu Semakan</span>
+                </div>
+                <div class="reveal flex flex-col items-center px-4">
+                    <span class="text-4xl sm:text-5xl font-extrabold gold-metallic-text mb-2 count-up" data-target="4">4</span>
+                    <span class="text-slate-300 text-sm font-medium">Sektor Fokus</span>
+                    <span class="text-slate-500 text-xs mt-1">Kerajaan · GLC · Berkanun · Swasta</span>
+                </div>
+                <div class="reveal flex flex-col items-center px-4">
+                    <span class="text-4xl sm:text-5xl font-extrabold gold-metallic-text mb-2 count-up" data-target="8" data-suffix="+">8+</span>
+                    <span class="text-slate-300 text-sm font-medium">Tahun Pengalaman</span>
+                </div>
+                <div class="reveal flex flex-col items-center px-4">
+                    <span class="text-4xl sm:text-5xl font-extrabold gold-metallic-text mb-2 count-up" data-target="0" data-suffix="%">0%</span>
+                    <span class="text-slate-300 text-sm font-medium">Bayaran Pendahuluan</span>
+                    <span class="text-slate-500 text-xs mt-1">Bayar hanya selepas lulus</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. TESTIMONIALS -->
+    <section class="py-20 px-4 bg-gold-light">
+        <div class="max-w-6xl mx-auto">
+            <div class="reveal text-center mb-12">
+                <p class="text-gold font-semibold text-xs tracking-widest uppercase mb-3">Testimoni Pelanggan</p>
+                <h2 class="text-3xl font-bold text-navy">Apa Kata Mereka?</h2>
+                <div class="mt-4 w-16 h-1 mx-auto rounded-full" style="background: linear-gradient(90deg, #A8882E, #FFE87C, #A8882E);"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="reveal relative bg-white p-8 rounded-2xl shadow-sm flex flex-col">
+                    <span class="absolute top-3 left-6 text-6xl text-gold font-serif leading-none opacity-20">"</span>
+                    <p class="text-slate-700 text-sm italic leading-relaxed relative z-10 pt-4 flex-grow">Alhamdulillah, pelanggan berjaya mendapatkan solusi penyatuan hutang selepas semakan kelayakan dibuat secara teratur.</p>
+                    <div class="mt-6 flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-navy flex items-center justify-center text-white font-bold text-xs flex-shrink-0">RCS</div>
+                        <div><p class="font-semibold text-navy text-sm">Pelanggan RCS</p><p class="text-slate-400 text-xs">Penyatuan Hutang</p></div>
+                    </div>
+                </div>
+                <div class="reveal relative bg-white p-8 rounded-2xl shadow-sm flex flex-col">
+                    <span class="absolute top-3 left-6 text-6xl text-gold font-serif leading-none opacity-20">"</span>
+                    <p class="text-slate-700 text-sm italic leading-relaxed relative z-10 pt-4 flex-grow">Pelanggan lebih jelas tentang komitmen bulanan dan pilihan pembiayaan yang sesuai selepas sesi konsultasi.</p>
+                    <div class="mt-6 flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-navy flex items-center justify-center text-white font-bold text-xs flex-shrink-0">RCS</div>
+                        <div><p class="font-semibold text-navy text-sm">Pelanggan RCS</p><p class="text-slate-400 text-xs">Konsultasi Kewangan</p></div>
+                    </div>
+                </div>
+                <div class="reveal relative bg-white p-8 rounded-2xl shadow-sm flex flex-col">
+                    <span class="absolute top-3 left-6 text-6xl text-gold font-serif leading-none opacity-20">"</span>
+                    <p class="text-slate-700 text-sm italic leading-relaxed relative z-10 pt-4 flex-grow">Proses semakan dibantu daripada peringkat dokumen sehingga permohonan dihantar kepada pihak berkaitan.</p>
+                    <div class="mt-6 flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-navy flex items-center justify-center text-white font-bold text-xs flex-shrink-0">RCS</div>
+                        <div><p class="font-semibold text-navy text-sm">Pelanggan RCS</p><p class="text-slate-400 text-xs">Semakan Kelayakan</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PANDUAN LAPORAN KREDIT -->
+    <section id="panduan-kredit" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="reveal text-center mb-14">
+                <p class="text-gold font-semibold text-xs tracking-widest uppercase mb-3">Semak Sendiri Rekod Anda</p>
+                <h2 class="text-3xl sm:text-4xl font-bold text-navy">Panduan Mendapatkan Laporan Kredit Individu</h2>
+                <div class="mt-4 w-16 h-1 mx-auto rounded-full" style="background: linear-gradient(90deg, #A8882E, #FFE87C, #A8882E);"></div>
+                <p class="text-slate-500 text-sm mt-5 max-w-2xl mx-auto leading-relaxed">CCRIS, CTOS dan Experian adalah tiga sumber utama yang digunakan bank dan institusi kewangan untuk menilai kelayakan kredit anda.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="reveal bg-slate-50 rounded-2xl border border-slate-100 p-7 flex flex-col">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-11 h-11 rounded-xl flex items-center justify-center bg-gold-light text-gold font-extrabold text-sm flex-shrink-0">BNM</div>
+                        <div><h3 class="text-lg font-bold text-navy leading-tight">Laporan CCRIS</h3><p class="text-slate-400 text-xs">Bank Negara Malaysia · Percuma</p></div>
+                    </div>
+                    <p class="text-slate-500 text-xs leading-relaxed mb-4">CCRIS direkodkan oleh Bank Negara Malaysia dan memaparkan sejarah pembiayaan serta rekod pembayaran anda dengan institusi kewangan berlesen.</p>
+                    <div class="w-full aspect-video mb-5 rounded-lg overflow-hidden border border-slate-200 bg-slate-200 shadow-sm">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/_Sl8diqCAFw?si=9Qt8_mj1EXz30KTn&controls=0" title="Panduan CCRIS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <ol class="space-y-3 text-sm text-slate-600 flex-grow">
+                        <li class="flex gap-3"><span class="w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">1</span><span>Layari portal rasmi <a href="https://eccris.bnm.gov.my" target="_blank" rel="noopener" class="text-navy font-semibold underline">eccris.bnm.gov.my</a> dan daftar akaun.</span></li>
+                        <li class="flex gap-3"><span class="w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">2</span><span>Lengkapkan pengesahan identiti (e-KYC).</span></li>
+                        <li class="flex gap-3"><span class="w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">3</span><span>Terima PIN pengesahan dan log masuk buat kali pertama.</span></li>
+                        <li class="flex gap-3"><span class="w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">4</span><span>Klik "Credit Report" untuk memuat turun laporan CCRIS.</span></li>
+                    </ol>
+                </div>
+                <div id="panduan-ctos" class="reveal bg-slate-50 rounded-2xl border border-slate-100 p-7 flex flex-col">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-11 h-11 rounded-xl flex items-center justify-center bg-gold-light text-gold font-extrabold text-sm flex-shrink-0">CTOS</div>
+                        <div><h3 class="text-lg font-bold text-navy leading-tight">Laporan CTOS</h3><p class="text-slate-400 text-xs">Agensi Pelaporan Kredit Swasta</p></div>
+                    </div>
+                    <p class="text-slate-500 text-xs leading-relaxed mb-4">CTOS mengumpul maklumat tambahan seperti tindakan undang-undang, status kebankrapan, dan rekod CCRIS dalam satu laporan yang lebih menyeluruh.</p>
+                    <div class="w-full aspect-video mb-5 rounded-lg overflow-hidden border border-slate-200 bg-slate-200 shadow-sm">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/muczNvx9fgg?si=y9GsZhimgBiy9-jL&controls=0" title="Panduan CTOS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <ol class="space-y-3 text-sm text-slate-600 flex-grow">
+                        <li class="flex gap-3"><span class="w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">1</span><span>Layari <a href="https://ctoscredit.com.my" target="_blank" rel="noopener" class="text-navy font-semibold underline">ctoscredit.com.my</a> atau muat turun aplikasi CTOS Malaysia.</span></li>
+                        <li class="flex gap-3"><span class="w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">2</span><span>Daftar akaun percuma menggunakan nombor MyKad dan e-mel.</span></li>
+                        <li class="flex gap-3"><span class="w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">3</span><span>Sahkan identiti dengan memuat naik imej MyKad dan TAC.</span></li>
+                        <li class="flex gap-3"><span class="w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">4</span><span>Log masuk untuk melihat Laporan Asas MyCTOS secara percuma.</span></li>
+                    </ol>
+                </div>
+                <div class="reveal bg-slate-50 rounded-2xl border border-slate-100 p-7 flex flex-col">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-11 h-11 rounded-xl flex items-center justify-center bg-gold-light text-gold font-extrabold text-xs flex-shrink-0">EXP</div>
+                        <div><h3 class="text-lg font-bold text-navy leading-tight">Laporan Experian</h3><p class="text-slate-400 text-xs">Dahulunya RAM Credit Information</p></div>
+                    </div>
+                    <p class="text-slate-500 text-xs leading-relaxed mb-4">Experian menyediakan Personal Credit Report yang merangkumi data CCRIS, litigasi, dan rekod institusi lain.</p>
+                    <div class="w-full aspect-video mb-5 rounded-lg overflow-hidden border border-slate-200 bg-slate-200 shadow-sm">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/ARxcq-zsywY?si=L3fM8f5pK511w6kk&controls=0" title="Panduan Experian" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <ol class="space-y-3 text-sm text-slate-600 flex-grow">
+                        <li class="flex gap-3"><span class="w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">1</span><span>Layari <a href="https://www.experian.com.my" target="_blank" rel="noopener" class="text-navy font-semibold underline">experian.com.my</a> atau portal MYCREDITINFO.</span></li>
+                        <li class="flex gap-3"><span class="w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">2</span><span>Pilih Personal Credit Report (PCR) dan daftar akaun.</span></li>
+                        <li class="flex gap-3"><span class="w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">3</span><span>Lengkapkan pengesahan identiti mengikut arahan.</span></li>
+                        <li class="flex gap-3"><span class="w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">4</span><span>Muat turun laporan setelah permohonan diproses.</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FAQS -->
+    <section id="faqs" class="py-20 px-4 bg-dot-grid">
+        <div class="max-w-3xl mx-auto">
+            <div class="reveal text-center mb-12">
+                <p class="text-gold font-semibold text-xs tracking-widest uppercase mb-3">Ada Soalan?</p>
+                <h2 class="text-3xl font-bold text-navy">Soalan Lazim</h2>
+                <div class="mt-4 w-16 h-1 mx-auto rounded-full" style="background: linear-gradient(90deg, #A8882E, #FFE87C, #A8882E);"></div>
+            </div>
+            <div class="space-y-3">
+                <div class="reveal faq-item bg-slate-50 rounded-xl border border-slate-100 overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold text-navy hover:text-gold transition text-sm">
+                        <span>Apakah servis utama RCS?</span>
+                        <svg class="faq-icon w-5 h-5 text-gold flex-shrink-0 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-answer hidden px-5 pb-5 text-slate-600 text-sm leading-relaxed">RCS menyediakan khidmat konsultasi kewangan, semakan kelayakan pembiayaan peribadi, penyatuan hutang dan panduan berkaitan isu CCRIS, CTOS, AKPK, SAA, legal action serta komitmen kewangan.</div>
+                </div>
+                <div class="reveal faq-item bg-slate-50 rounded-xl border border-slate-100 overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold text-navy hover:text-gold transition text-sm">
+                        <span>Siapa yang boleh membuat semakan?</span>
+                        <svg class="faq-icon w-5 h-5 text-gold flex-shrink-0 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-answer hidden px-5 pb-5 text-slate-600 text-sm leading-relaxed">Semakan terbuka kepada kakitangan kerajaan, GLC, badan berkanun dan pekerja swasta yang mempunyai pendapatan tetap serta dokumen sokongan yang lengkap.</div>
+                </div>
+                <div class="reveal faq-item bg-slate-50 rounded-xl border border-slate-100 overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold text-navy hover:text-gold transition text-sm">
+                        <span>Apakah kelayakan asas untuk semakan awal?</span>
+                        <svg class="faq-icon w-5 h-5 text-gold flex-shrink-0 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-answer hidden px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                        <ul class="space-y-1 mb-3">
+                            <li>• <strong>Kerajaan:</strong> Gaji asas minimum RM1,500</li>
+                            <li>• <strong>GLC / Badan Berkanun:</strong> Gaji asas minimum RM2,500</li>
+                            <li>• <strong>Swasta:</strong> Gaji asas minimum RM3,000</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="reveal faq-item bg-slate-50 rounded-xl border border-slate-100 overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold text-navy hover:text-gold transition text-sm">
+                        <span>Adakah perlu bayar dahulu sebelum semakan dibuat?</span>
+                        <svg class="faq-icon w-5 h-5 text-gold flex-shrink-0 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-answer hidden px-5 pb-5 text-slate-600 text-sm leading-relaxed">Tidak. RCS mengamalkan konsep bayaran hanya apabila permohonan berjaya diluluskan, tertakluk kepada terma perkhidmatan.</div>
+                </div>
+                <div class="reveal faq-item bg-slate-50 rounded-xl border border-slate-100 overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold text-navy hover:text-gold transition text-sm">
+                        <span>Adakah RCS menjamin kelulusan pinjaman?</span>
+                        <svg class="faq-icon w-5 h-5 text-gold flex-shrink-0 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-answer hidden px-5 pb-5 text-slate-600 text-sm leading-relaxed">Tidak. Kelulusan adalah tertakluk sepenuhnya kepada penilaian pihak bank atau koperasi. RCS membantu dari segi semakan awal, konsultasi, penyusunan dokumen dan cadangan solusi yang bersesuaian.</div>
+                </div>
+                <div class="reveal faq-item bg-slate-50 rounded-xl border border-slate-100 overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold text-navy hover:text-gold transition text-sm">
+                        <span>Adakah maklumat pelanggan dirahsiakan?</span>
+                        <svg class="faq-icon w-5 h-5 text-gold flex-shrink-0 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-answer hidden px-5 pb-5 text-slate-600 text-sm leading-relaxed">Ya. Semua maklumat dan dokumen pelanggan digunakan hanya untuk tujuan semakan dan permohonan berkaitan, tertakluk kepada persetujuan pelanggan.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. CONTACT FORM -->
+    <section id="contact" class="py-20 px-4 bg-slate-50">
+        <div class="max-w-2xl mx-auto">
+            <div class="reveal text-center mb-10">
+                <p class="text-gold font-semibold text-xs tracking-widest uppercase mb-3">Mulakan Sekarang</p>
+                <h2 class="text-3xl font-bold text-navy mb-3">Semak Kelayakan Anda</h2>
+                <p class="text-slate-500 text-sm">Isi maklumat ringkas & upload dokumen untuk semakan awal.</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+                <div class="bg-navy px-6 py-4">
+                    <p class="text-white font-semibold text-sm">Borang Semakan Kelayakan</p>
+                    <p class="text-slate-400 text-xs mt-0.5">Semua maklumat adalah SULIT dan dilindungi</p>
+                </div>
+                <form id="borang-permohonan" action="#" method="POST" enctype="multipart/form-data" class="p-6 sm:p-8 space-y-8">
+                    <fieldset>
+                        <legend class="flex items-center gap-2 text-xs font-bold text-navy uppercase tracking-widest mb-5 pb-2 border-b border-gold-light w-full">
+                            <span class="w-5 h-5 bg-gold-light text-gold rounded flex items-center justify-center font-bold">1</span>
+                            Maklumat Peribadi
+                        </legend>
+                        <div class="space-y-4">
+                            <div>
+                                <label for="nama" class="block text-xs font-semibold text-slate-600 mb-1.5">Nama Penuh <span class="text-rose-500">*</span></label>
+                                <input type="text" id="nama" name="nama" placeholder="Nama seperti dalam IC" class="w-full rounded-lg border-slate-200 focus:border-navy focus:ring-navy p-2.5 border text-sm transition" required>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="no_tele" class="block text-xs font-semibold text-slate-600 mb-1.5">No. Telefon / WhatsApp <span class="text-rose-500">*</span></label>
+                                    <input type="tel" id="no_tele" name="no_tele" placeholder="+60 12-345 6789" class="w-full rounded-lg border-slate-200 focus:border-navy focus:ring-navy p-2.5 border text-sm transition" required>
+                                </div>
+                                <div>
+                                    <label for="alamat_emel" class="block text-xs font-semibold text-slate-600 mb-1.5">Alamat Emel <span class="text-slate-400 font-normal">(Pilihan)</span></label>
+                                    <input type="email" id="alamat_emel" name="alamat_emel" placeholder="nama@emel.com" class="w-full rounded-lg border-slate-200 focus:border-navy focus:ring-navy p-2.5 border text-sm transition">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="daerah" class="block text-xs font-semibold text-slate-600 mb-1.5">Daerah <span class="text-rose-500">*</span></label>
+                                    <input type="text" id="daerah" name="daerah" placeholder="Contoh: Petaling Jaya" class="w-full rounded-lg border-slate-200 focus:border-navy focus:ring-navy p-2.5 border text-sm transition" required>
+                                </div>
+                                <div>
+                                    <label for="poskod" class="block text-xs font-semibold text-slate-600 mb-1.5">Poskod <span class="text-rose-500">*</span></label>
+                                    <input type="text" id="poskod" name="poskod" placeholder="Contoh: 47810" maxlength="5" class="w-full rounded-lg border-slate-200 focus:border-navy focus:ring-navy p-2.5 border text-sm transition" required>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="flex items-center gap-2 text-xs font-bold text-navy uppercase tracking-widest mb-5 pb-2 border-b border-gold-light w-full">
+                            <span class="w-5 h-5 bg-gold-light text-gold rounded flex items-center justify-center font-bold">2</span>
+                            Maklumat Pekerjaan
+                        </legend>
+                        <div class="space-y-4">
+                            <div>
+                                <label for="sektor_pekerjaan" class="block text-xs font-semibold text-slate-600 mb-1.5">Sektor Pekerjaan <span class="text-rose-500">*</span></label>
+                                <select id="sektor_pekerjaan" name="sektor_pekerjaan" class="w-full rounded-lg border-slate-200 focus:border-navy focus:ring-navy p-2.5 border bg-white text-sm transition" required>
+                                    <option value="">Sila pilih sektor...</option>
+                                    <option value="kerajaan">Kerajaan</option>
+                                    <option value="glc">GLC (Syarikat Berkaitan Kerajaan)</option>
+                                    <option value="berkanun">Badan Berkanun</option>
+                                    <option value="swasta">Swasta</option>
+                                </select>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="nama_majikan" class="block text-xs font-semibold text-slate-600 mb-1.5">Nama Majikan <span class="text-rose-500">*</span></label>
+                                    <input type="text" id="nama_majikan" name="nama_majikan" placeholder="Contoh: Kementerian Pendidikan" class="w-full rounded-lg border-slate-200 focus:border-navy focus:ring-navy p-2.5 border text-sm transition" required>
+                                </div>
+                                <div>
+                                    <label for="jawatan" class="block text-xs font-semibold text-slate-600 mb-1.5">Jawatan <span class="text-rose-500">*</span></label>
+                                    <input type="text" id="jawatan" name="jawatan" placeholder="Contoh: Pegawai Tadbir" class="w-full rounded-lg border-slate-200 focus:border-navy focus:ring-navy p-2.5 border text-sm transition" required>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="gaji_asas" class="block text-xs font-semibold text-slate-600 mb-1.5">Gaji Asas (RM) <span class="text-rose-500">*</span></label>
+                                    <input type="number" id="gaji_asas" name="gaji_asas" placeholder="Contoh: 3500" min="0" class="w-full rounded-lg border-slate-200 focus:border-navy focus:ring-navy p-2.5 border text-sm transition" required>
+                                </div>
+                                <div>
+                                    <label for="status_pekerjaan" class="block text-xs font-semibold text-slate-600 mb-1.5">Status Pekerjaan <span class="text-rose-500">*</span></label>
+                                    <select id="status_pekerjaan" name="status_pekerjaan" class="w-full rounded-lg border-slate-200 focus:border-navy focus:ring-navy p-2.5 border bg-white text-sm transition" required>
+                                        <option value="">Sila pilih...</option>
+                                        <option value="tetap">Tetap</option>
+                                        <option value="kontrak">Kontrak</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-2">Masalah Utama <span class="text-rose-500">*</span></label>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <label class="flex items-center gap-2 p-2.5 rounded-lg border border-slate-200 hover:border-gold cursor-pointer text-sm text-slate-600 transition has-[:checked]:border-gold has-[:checked]:bg-gold-light"><input type="checkbox" name="masalah[]" value="komitmen_tinggi" class="accent-navy flex-shrink-0"> Komitmen Tinggi</label>
+                                    <label class="flex items-center gap-2 p-2.5 rounded-lg border border-slate-200 hover:border-gold cursor-pointer text-sm text-slate-600 transition has-[:checked]:border-gold has-[:checked]:bg-gold-light"><input type="checkbox" name="masalah[]" value="ccris" class="accent-navy flex-shrink-0"> CCRIS</label>
+                                    <label class="flex items-center gap-2 p-2.5 rounded-lg border border-slate-200 hover:border-gold cursor-pointer text-sm text-slate-600 transition has-[:checked]:border-gold has-[:checked]:bg-gold-light"><input type="checkbox" name="masalah[]" value="ctos" class="accent-navy flex-shrink-0"> CTOS</label>
+                                    <label class="flex items-center gap-2 p-2.5 rounded-lg border border-slate-200 hover:border-gold cursor-pointer text-sm text-slate-600 transition has-[:checked]:border-gold has-[:checked]:bg-gold-light"><input type="checkbox" name="masalah[]" value="akpk" class="accent-navy flex-shrink-0"> AKPK</label>
+                                    <label class="flex items-center gap-2 p-2.5 rounded-lg border border-slate-200 hover:border-gold cursor-pointer text-sm text-slate-600 transition has-[:checked]:border-gold has-[:checked]:bg-gold-light"><input type="checkbox" name="masalah[]" value="saa" class="accent-navy flex-shrink-0"> SAA</label>
+                                    <label class="flex items-center gap-2 p-2.5 rounded-lg border border-slate-200 hover:border-gold cursor-pointer text-sm text-slate-600 transition has-[:checked]:border-gold has-[:checked]:bg-gold-light"><input type="checkbox" name="masalah[]" value="legal_action" class="accent-navy flex-shrink-0"> Legal Action</label>
+                                    <label class="flex items-center gap-2 p-2.5 rounded-lg border border-slate-200 hover:border-gold cursor-pointer text-sm text-slate-600 transition col-span-2 has-[:checked]:border-gold has-[:checked]:bg-gold-light"><input type="checkbox" name="masalah[]" value="lain_lain" class="accent-navy flex-shrink-0"> Lain-lain</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="flex items-center gap-2 text-xs font-bold text-navy uppercase tracking-widest mb-5 pb-2 border-b border-gold-light w-full">
+                            <span class="w-5 h-5 bg-gold-light text-gold rounded flex items-center justify-center font-bold">3</span>
+                            Dokumen Sokongan
+                        </legend>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-2">Slip Gaji 3 Bulan Terkini <span class="text-rose-500">*</span></label>
+                                <div class="space-y-3">
+                                    <div class="border-2 border-dashed border-slate-200 rounded-lg p-4 hover:border-gold transition">
+                                        <label for="slip_gaji_1" class="block text-[11px] font-medium text-slate-500 mb-1.5">Bulan Pertama (Terkini)</label>
+                                        <input type="file" id="slip_gaji_1" name="slip_gaji[]" class="w-full text-xs text-slate-600 file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-navy file:text-white hover:file:bg-navy-dark transition" required>
+                                    </div>
+                                    <div class="border-2 border-dashed border-slate-200 rounded-lg p-4 hover:border-gold transition">
+                                        <label for="slip_gaji_2" class="block text-[11px] font-medium text-slate-500 mb-1.5">Bulan Kedua</label>
+                                        <input type="file" id="slip_gaji_2" name="slip_gaji[]" class="w-full text-xs text-slate-600 file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-navy file:text-white hover:file:bg-navy-dark transition" required>
+                                    </div>
+                                    <div class="border-2 border-dashed border-slate-200 rounded-lg p-4 hover:border-gold transition">
+                                        <label for="slip_gaji_3" class="block text-[11px] font-medium text-slate-500 mb-1.5">Bulan Ketiga</label>
+                                        <input type="file" id="slip_gaji_3" name="slip_gaji[]" class="w-full text-xs text-slate-600 file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-navy file:text-white hover:file:bg-navy-dark transition" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="ctos_report" class="block text-xs font-semibold text-slate-600 mb-1.5">Laporan CTOS Terkini <span class="text-rose-500">*</span></label>
+                                <div class="border-2 border-dashed border-slate-200 rounded-lg p-4 hover:border-gold transition">
+                                    <input type="file" id="ctos_report" name="ctos_report" class="w-full text-xs text-slate-600 file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-navy file:text-white hover:file:bg-navy-dark transition" required>
+                                </div>
+                            </div>
+                            <div id="epf_section" class="hidden">
+                                <label for="penyata_epf" class="block text-xs font-semibold text-slate-600 mb-1.5">Penyata EPF 2 Tahun Terkini <span class="text-rose-500">*</span> <span class="text-blue-500 font-normal">(Swasta sahaja)</span></label>
+                                <div class="border-2 border-dashed border-blue-200 rounded-lg p-4 hover:border-gold transition">
+                                    <input type="file" id="penyata_epf" name="penyata_epf" class="w-full text-xs text-slate-600 file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-navy file:text-white hover:file:bg-navy-dark transition">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <button type="button" onclick="openConsentModal()" class="btn-gold-metallic w-full font-bold py-4 px-4 text-sm tracking-wide shadow-sm">
+                        Hantar Permohonan Sekarang
+                    </button>
+                    <p class="text-center text-[10px] text-slate-400">Dengan menghantar borang ini, anda bersetuju dengan <a href="#" class="text-navy underline">Dasar Privasi</a> kami.</p>
+                </form>
+
+                <!-- Consent Modal -->
+                <div id="consent-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
+                    <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm" onclick="closeConsentModal()"></div>
+                    <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-lg max-h-[90vh] flex flex-col">
+                        <div class="px-6 pt-6 pb-4 border-b border-slate-100 flex items-start justify-between gap-4 flex-shrink-0">
+                            <div>
+                                <h3 class="font-bold text-slate-800 text-base leading-snug">Pengesahan & Persetujuan</h3>
+                                <p class="text-xs text-slate-400 mt-0.5">Sila baca dan tandakan persetujuan anda sebelum menghantar</p>
+                            </div>
+                            <button onclick="closeConsentModal()" class="text-slate-400 hover:text-slate-600 transition mt-0.5 flex-shrink-0">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                            </button>
+                        </div>
+                        <div class="overflow-y-auto px-6 py-5 space-y-5 flex-1">
+                            <div class="bg-slate-50 rounded-xl p-4 border border-slate-200">
+                                <p class="text-xs text-slate-600 leading-relaxed">Saya mengesahkan bahawa semua maklumat dan dokumen yang diberikan adalah benar. Saya bersetuju membenarkan <span class="font-semibold text-navy">Rahmah Consultancy Services</span> mengumpul, menyimpan, memproses dan berkongsi maklumat saya kepada bank, koperasi, institusi kewangan bagi tujuan semakan kelayakan. Saya faham bahawa semakan ini <span class="font-semibold">tidak menjamin kelulusan</span>.</p>
+                            </div>
+                            <div class="space-y-3">
+                                <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Wajib</p>
+                                <label class="flex items-start gap-3 cursor-pointer group"><input type="checkbox" id="modal-consent-pdpa" class="mt-0.5 accent-navy flex-shrink-0 w-4 h-4"><span class="text-xs text-slate-600 leading-relaxed">Saya telah membaca, memahami dan bersetuju dengan <a href="#" class="text-navy underline font-medium">Notis Perlindungan Data Peribadi</a>.</span></label>
+                                <label class="flex items-start gap-3 cursor-pointer group"><input type="checkbox" id="modal-consent-contact" class="mt-0.5 accent-navy flex-shrink-0 w-4 h-4"><span class="text-xs text-slate-600 leading-relaxed">Saya bersetuju untuk dihubungi melalui WhatsApp/telefon/emel bagi tujuan semakan dan susulan kes.</span></label>
+                            </div>
+                            <p id="consent-error" class="hidden text-xs text-rose-500 font-medium">Sila tandakan kedua-dua kotak wajib sebelum menghantar.</p>
+                        </div>
+                        <div class="px-6 py-4 border-t border-slate-100 flex gap-3 flex-shrink-0">
+                            <button onclick="closeConsentModal()" class="flex-1 py-2.5 px-4 rounded-xl border border-slate-200 text-sm font-semibold text-slate-600 hover:bg-slate-50 transition">Batal</button>
+                            <button onclick="submitWithConsent()" class="flex-1 btn-gold-metallic py-2.5 px-4 text-sm font-bold rounded-xl">Hantar Permohonan</button>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                function openConsentModal() {
+                    const form = document.getElementById('borang-permohonan');
+                    if (form && !form.checkValidity()) { form.reportValidity(); return; }
+                    document.getElementById('consent-modal').classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                }
+                function closeConsentModal() {
+                    document.getElementById('consent-modal').classList.add('hidden');
+                    document.body.style.overflow = '';
+                    document.getElementById('consent-error').classList.add('hidden');
+                }
+                function submitWithConsent() {
+                    const pdpa = document.getElementById('modal-consent-pdpa').checked;
+                    const contact = document.getElementById('modal-consent-contact').checked;
+                    if (!pdpa || !contact) { document.getElementById('consent-error').classList.remove('hidden'); return; }
+                    alert('Demo mode — borang tidak dihantar dalam versi statik ini.');
+                    closeConsentModal();
+                }
+                document.addEventListener('keydown', e => { if (e.key === 'Escape') closeConsentModal(); });
+                </script>
+            </div>
+
+            <div class="mt-6 flex flex-wrap justify-center gap-6 text-sm text-slate-500">
+                <a href="mailto:rahmahconsultant@gmail.com" class="flex items-center gap-2 hover:text-navy transition">
+                    <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+                    rahmahconsultant@gmail.com
+                </a>
+                <a href="tel:+60123456789" class="flex items-center gap-2 hover:text-navy transition">
+                    <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+                    +60 12-345 6789
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    document.querySelectorAll('.faq-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            this.nextElementSibling.classList.toggle('hidden');
+            this.querySelector('.faq-icon').classList.toggle('rotate-180');
+        });
+    });
+    document.getElementById('sektor_pekerjaan').addEventListener('change', function () {
+        var epfSection = document.getElementById('epf_section');
+        var epfInput = document.getElementById('penyata_epf');
+        if (this.value === 'swasta') { epfSection.classList.remove('hidden'); epfInput.required = true; }
+        else { epfSection.classList.add('hidden'); epfInput.required = false; epfInput.value = ''; }
+    });
+    </script>
+    <script>
+    (function () {
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const reveals = document.querySelectorAll('.reveal');
+        if (reduceMotion || !('IntersectionObserver' in window)) {
+            reveals.forEach(el => el.classList.add('is-visible'));
+        } else {
+            const obs = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) return;
+                    const siblings = Array.from(entry.target.parentElement.children).filter(c => c.classList.contains('reveal'));
+                    entry.target.style.transitionDelay = Math.min(siblings.indexOf(entry.target) * 90, 540) + 'ms';
+                    entry.target.classList.add('is-visible');
+                    obs.unobserve(entry.target);
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+            reveals.forEach(el => obs.observe(el));
+        }
+        const counters = document.querySelectorAll('.count-up');
+        function runCount(el) {
+            const target = parseFloat(el.dataset.target || '0');
+            const suffix = el.dataset.suffix || '';
+            if (reduceMotion || target === 0) { el.textContent = target.toLocaleString('en-US') + suffix; return; }
+            const duration = 1600; let startTs = null;
+            function step(ts) {
+                if (!startTs) startTs = ts;
+                const p = Math.min((ts - startTs) / duration, 1);
+                const eased = 1 - Math.pow(1 - p, 3);
+                el.textContent = Math.round(target * eased).toLocaleString('en-US') + suffix;
+                if (p < 1) requestAnimationFrame(step);
+            }
+            requestAnimationFrame(step);
+        }
+        const countObs = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) { runCount(entry.target); countObs.unobserve(entry.target); } });
+        }, { threshold: 0.4 });
+        counters.forEach(el => countObs.observe(el));
+    })();
+    </script>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-navy text-slate-300 py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div>
+                <div class="mb-3">
+                    <span class="text-2xl font-extrabold text-white tracking-tight">RAHMAH</span>
+                    <span class="block text-xs text-gold font-semibold tracking-[0.2em] uppercase mt-0.5">Consultancy Services</span>
+                </div>
+                <p class="text-sm text-slate-400 leading-relaxed mb-3">Solusi Kewangan, Masa Depan Terjamin.</p>
+                <p class="text-xs text-slate-500">rahmahconsultant@gmail.com<br>+60 12-345 6789</p>
+            </div>
+            <div>
+                <h3 class="text-gold font-semibold text-xs tracking-widest uppercase mb-4">Pautan Pantas</h3>
+                <div class="flex flex-col space-y-2.5">
+                    <a href="#services" class="text-sm text-slate-400 hover:text-white transition">Servis Kami</a>
+                    <a href="#stats"    class="text-sm text-slate-400 hover:text-white transition">Statistik</a>
+                    <a href="#faqs"     class="text-sm text-slate-400 hover:text-white transition">Soalan Lazim</a>
+                    <a href="#contact"  class="text-sm text-slate-400 hover:text-white transition">Semak Kelayakan</a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-gold font-semibold text-xs tracking-widest uppercase mb-4">Undang-Undang</h3>
+                <div class="flex flex-col space-y-2.5">
+                    <a href="#" class="text-sm text-slate-400 hover:text-white transition">Dasar Privasi</a>
+                    <a href="#" class="text-sm text-slate-400 hover:text-white transition">Terma Perkhidmatan</a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-10 pt-8 border-t border-slate-700 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-slate-500">
+            <span>&copy; 2026 Rahmah Consultancy Services. Hak Cipta Terpelihara.</span>
+            <span>Dibina untuk pelanggan Malaysia</span>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/app-CIomGrQN.js" defer></script>
+</body>
+</html>
